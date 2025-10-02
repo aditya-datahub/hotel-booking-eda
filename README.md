@@ -6,9 +6,9 @@ This project performs an **Exploratory Data Analysis (EDA)** on a large hotel bo
 ---
 
 ## 🛠️ Data Preparation & Hygiene
-We started with 119,390 records and 32 features.
+The analysis began with the `hotel_bookings_2.csv` file, containing 119,390 records and 32 features.
 
-* **🗑️ Data Reduction:** Features with excessive missing values (**`company`** and **`agent`**) were **dropped** to focus on higher-quality data.
+* **🗑️ Data Reduction:** Features with excessive missing values (**`company`** and **`agent`**) were **dropped**.
 * **📉 Outlier Control:** Extreme outliers in the **Average Daily Rate (ADR)** were **removed** (e.g., ADR $\ge 5000$) to ensure valid statistical representation.
 * **⏰ Time Ready:** The **`reservation_status_date`** column was converted to a datetime object for time-series analysis.
 
@@ -33,4 +33,21 @@ The analysis highlights critical geographic and market drivers of cancellations:
 ### 3. Financial Impact
 The cost of a cancellation fluctuates significantly throughout the year:
 * **$$ Highest Loss:** The **ADR for canceled reservations peaks in September**. Cancellations during this period result in the greatest financial loss per booking.
-* **Monthly Volume:** The volume of reservations (both canceled and non-canceled) remains relatively stable across the months, suggesting the **drivers of cancellation are related more to customer profile** (market/country) than seasonality.
+
+---
+
+## 📁 Project Files
+The entire analysis is contained within a single file:
+
+* [`main.ipynb`](./main.ipynb) - A **Jupyter Notebook** containing all Python code for data loading, cleaning, manipulation, and the complete Exploratory Data Analysis (EDA).
+
+---
+
+## 🧠 Skills Demonstrated
+
+This project is a powerful testament to full-stack data science proficiency:
+
+* **Exploratory Data Analysis (EDA):** Masterfully **uncovered hidden risk factors and predictive trends** by employing comprehensive statistical methods and advanced visualization techniques.
+* **Data Engineering & Wrangling:** **Expertly architected the dataset** using **Pandas**, executing critical steps like strategic outlier mitigation, null value management, and data type transformation for analytical readiness.
+* **High-Impact Visualization:** Leveraged **Matplotlib** and **Seaborn** to **design compelling, evidence-based graphics** that clearly articulate complex financial losses and cancellation patterns.
+* **Strategic Business Translation:** Proven ability to rapidly convert raw data and statistical outputs into **clear, prioritized, and actionable insights**, directly bridging the gap between analysis and strategic decision-making.
